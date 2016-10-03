@@ -17,6 +17,29 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    UIViewController* firstVC = [[UIViewController alloc] init];
+    [firstVC.view setBackgroundColor:[UIColor blueColor]];
+    
+    UIViewController* secondVC = [[UIViewController alloc] init];
+    [secondVC.view setBackgroundColor:[UIColor yellowColor]];
+    
+    UIViewController* thirdVC = [[UIViewController alloc] init];
+    [thirdVC.view setBackgroundColor:[UIColor greenColor]];
+    
+    UINavigationController* firstNVC = [[UINavigationController alloc] initWithRootViewController:firstVC];
+    
+    UITabBarController* tabBarViewController = [[UITabBarController alloc] init];
+    tabBarViewController.viewControllers = @[firstNVC, secondVC, thirdVC];
+    
+    self.window.rootViewController = tabBarViewController;
+    
+    UIViewController* modalVC = [[UIViewController alloc] init];
+    [modalVC.view setBackgroundColor:[UIColor redColor]];
+    
+    UINavigationController* modalNVC = [[UINavigationController alloc] initWithRootViewController:modalVC];
+    modalNVC.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+    
     return YES;
 }
 
