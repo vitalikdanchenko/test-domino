@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <TalkableSDK/Talkable.h>
 
 @interface AppDelegate ()
 
@@ -44,6 +45,9 @@
     
     [tabBarViewController presentViewController:modalNVC animated:YES completion:nil];
     
+    [[Talkable manager] setDebug:YES];
+    [[Talkable manager] setApiKey:@"8L6Kcf9DEIGQQHLDf8i" andSiteSlug:@"talkable-ios-demo"];
+    
     return YES;
 }
 
@@ -72,6 +76,13 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL*)url sourceApplication:(NSString*)sourceApplication annotation:(id)annotation {
+    
+    [[Talkable manager] handleOpenURL:url];
+    
+    return YES;
 }
 
 

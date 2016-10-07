@@ -13,6 +13,13 @@
 		7A14A76E1DA2AF7400F70A29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A14A76C1DA2AF7400F70A29 /* Main.storyboard */; };
 		7A14A7701DA2AF7500F70A29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A14A76F1DA2AF7500F70A29 /* Assets.xcassets */; };
 		7A14A7731DA2AF7500F70A29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A14A7711DA2AF7500F70A29 /* LaunchScreen.storyboard */; };
+		7A795FC51DA7EA58000D2FEE /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A795FC41DA7EA58000D2FEE /* AddressBook.framework */; };
+		7A795FC71DA7EA5E000D2FEE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A795FC61DA7EA5E000D2FEE /* MessageUI.framework */; };
+		7A795FC91DA7EA6A000D2FEE /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A795FC81DA7EA6A000D2FEE /* SafariServices.framework */; };
+		7A795FCB1DA7EA72000D2FEE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A795FCA1DA7EA72000D2FEE /* Security.framework */; };
+		7A795FCD1DA7EA7B000D2FEE /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A795FCC1DA7EA7B000D2FEE /* Social.framework */; };
+		7A795FCF1DA7EA83000D2FEE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A795FCE1DA7EA83000D2FEE /* WebKit.framework */; };
+		7A795FD11DA7EAA7000D2FEE /* TalkableSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A795FD01DA7EAA7000D2FEE /* TalkableSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		7A14A76F1DA2AF7500F70A29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A14A7721DA2AF7500F70A29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A14A7741DA2AF7500F70A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A795FC41DA7EA58000D2FEE /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		7A795FC61DA7EA5E000D2FEE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		7A795FC81DA7EA6A000D2FEE /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		7A795FCA1DA7EA72000D2FEE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7A795FCC1DA7EA7B000D2FEE /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		7A795FCE1DA7EA83000D2FEE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		7A795FD01DA7EAA7000D2FEE /* TalkableSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TalkableSDK.framework; path = "test-domino/TalkableSDK.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +47,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A795FCF1DA7EA83000D2FEE /* WebKit.framework in Frameworks */,
+				7A795FCD1DA7EA7B000D2FEE /* Social.framework in Frameworks */,
+				7A795FCB1DA7EA72000D2FEE /* Security.framework in Frameworks */,
+				7A795FC91DA7EA6A000D2FEE /* SafariServices.framework in Frameworks */,
+				7A795FC71DA7EA5E000D2FEE /* MessageUI.framework in Frameworks */,
+				7A795FD11DA7EAA7000D2FEE /* TalkableSDK.framework in Frameworks */,
+				7A795FC51DA7EA58000D2FEE /* AddressBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +65,7 @@
 			children = (
 				7A14A7621DA2AF7400F70A29 /* test-domino */,
 				7A14A7611DA2AF7400F70A29 /* Products */,
+				7A795FC31DA7EA57000D2FEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +99,20 @@
 				7A14A7641DA2AF7400F70A29 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7A795FC31DA7EA57000D2FEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A795FD01DA7EAA7000D2FEE /* TalkableSDK.framework */,
+				7A795FCE1DA7EA83000D2FEE /* WebKit.framework */,
+				7A795FCC1DA7EA7B000D2FEE /* Social.framework */,
+				7A795FCA1DA7EA72000D2FEE /* Security.framework */,
+				7A795FC81DA7EA6A000D2FEE /* SafariServices.framework */,
+				7A795FC61DA7EA5E000D2FEE /* MessageUI.framework */,
+				7A795FC41DA7EA58000D2FEE /* AddressBook.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,8 +306,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/test-domino",
+				);
 				INFOPLIST_FILE = "test-domino/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.talkable.test-domino";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -281,8 +322,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/test-domino",
+				);
 				INFOPLIST_FILE = "test-domino/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.talkable.test-domino";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -307,6 +353,7 @@
 				7A14A7791DA2AF7500F70A29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
