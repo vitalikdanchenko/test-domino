@@ -37,8 +37,12 @@
     UIViewController* modalVC = [[UIViewController alloc] init];
     [modalVC.view setBackgroundColor:[UIColor redColor]];
     
+    [self.window makeKeyAndVisible];
+    
     UINavigationController* modalNVC = [[UINavigationController alloc] initWithRootViewController:modalVC];
     modalNVC.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+    
+    [tabBarViewController presentViewController:modalNVC animated:YES completion:nil];
     
     return YES;
 }
